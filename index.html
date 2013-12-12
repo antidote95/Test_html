@@ -6,5 +6,18 @@
         <title>Test app</title>
     </head>
     <body>
+        <div id="container">
+        <div id="topbar"> ...topbar content... </div>
+        <div id="navbar"> ...navbar content... </div>
+        <!-- the main section where all pages will be loaded using URL variables and PHP include() function -->
+        <div id="main">
+        <div id="column_left"> ...column left content... </div>
+        <div id="column_right"> ...column right content... </div>
+        <!-- this layer solve some issue about the css design, forced the #main layer height equal to height of two column layer (#columnt_left and #column_right) inside itself -->
+        <div class="spacer"></div>
+        <!-- close #main content -->
+        </div>
+        <!-- close #container -->
+        </div>
     </body>
 </html>
